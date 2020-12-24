@@ -1,0 +1,29 @@
+extends ./layouts/common
+
+block style
+    include ./css/common.css
+
+block content
+    div(style="display: flex; justify-content: flex-end;padding: 20px;")
+        button#notice.btn.btn-success(type='button')
+    div.groupButton
+        div#button-show
+
+    #modal-form.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(style='max-width: 900px;min-width: 800px;')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') &times;
+                .modal-body
+                    table#form.table.table-borderless
+                .modal-footer
+                    button.cancel.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
+                    button#Ok.btn.btn-success(type='button', data-dismiss='modal', data-toggle='modal', data-target='#modal-bill') Ok   
+    
+    div#div-content
+
+block body_continue
+    script(src="/views/js/info.js").
+        

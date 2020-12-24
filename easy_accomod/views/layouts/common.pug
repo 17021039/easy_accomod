@@ -1,0 +1,35 @@
+html
+    head
+        meta(charset='utf-8')
+
+        // Bootstrap core CSS
+        link(rel='stylesheet', href='/assets/dist/css/bootstrap.min.css')
+
+        
+        block link
+        style
+            block style
+    body
+
+
+
+        #container.container.pt-2
+            block content
+                
+        
+        script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj', crossorigin='anonymous')
+        script.
+            window.jQuery || document.write('<script src="/assets/js/vendor/jquery.slim.min.js"><\/script>')
+        script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')
+        script(src='/assets/dist/js/bootstrap.min.js')
+        script(src='/assets/dist/js/bootstrap.bundle.min.js')
+        
+        script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+        script(src="http://localhost:6660/socket.io/socket.io.js")
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+        
+
+
+        block body_continue
+
+        
